@@ -18,7 +18,7 @@ export default function Projects() {
                 <div className='projects__main'>
                     <div className='projects__main-box'>
                         <div className='projects__main-img' >
-                    <img src={aidMapper} alt='aidMapper' className='projects__main-img--img'></img>
+                    <img src={aidMapper} alt='aidMapper' className='projects__main-img--img longer'></img>
                         </div>
                         <div className='projects__main-exp'>
                         <span className='projects__main-tech'>REACT, MONGODB, NODE, EXPRESS, MapBox</span>
@@ -32,7 +32,7 @@ map-based interface for easy location-based donations .</p>
                 <div className='projects__main'>
                     <div className='projects__main-box'>
                         <div className='projects__main-img' >
-                    <img src={ukg} alt='aidMapper' className='projects__main-img--img'></img>
+                    <img src={ukg} alt='aidMapper' className='projects__main-img--img '></img>
                         </div>
                         <div className='projects__main-exp'>
                         <span className='projects__main-tech'>REACT, AI</span>
@@ -44,7 +44,7 @@ map-based interface for easy location-based donations .</p>
                 <div className='projects__main'>
                     <div className='projects__main-box'>
                         <div className='projects__main-img' >
-                    <img src={instock} alt='aidMapper' className='projects__main-img--img'></img>
+                    <img src={instock} alt='aidMapper' className='projects__main-img--img longer'></img>
                         </div>
                         <div className='projects__main-exp'>
                         <span className='projects__main-tech'>REACT, MYSQL, NODE, EXPRESS</span>
