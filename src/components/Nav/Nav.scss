@@ -1,0 +1,20 @@
+.nav {
+    margin: 1rem;
+    display: flex;
+    border: 1px red solid;
+    &__logo {
+        color: rgb(209, 206, 206);
+    }
+
+    &__menu {
+        &-icon {
+            color: rgb(209, 206, 206);
+        }
+
+        &-items {
+            color: rgb(209, 206, 206);
+            background-color: red;
+            width: 20%;
+        }
+    }
+}
