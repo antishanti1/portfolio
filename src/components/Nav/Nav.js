@@ -6,28 +6,37 @@ export default function Nav() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+    setShowDropdown(true); 
+  };
+
+  const handleItemClick = () => {
+    setShowDropdown(false);
   };
 
   return (
     <>
-      <nav className='nav'>
+      <nav  className='nav' >
         <div className='nav__logo'>
           <span>A. Shutkova</span>
         </div>
 
-        <div className='nav__menu'>
-          <CgMenuRightAlt className='nav__menu-icon' onClick={toggleDropdown} />
+
+<div className='nav__menu'>
+          {!showDropdown && ( 
+            <CgMenuRightAlt className='nav__menu-icon' onClick={toggleDropdown} />
+          )}
 
           {showDropdown && (
             <ul className='nav__menu-items'>
-              <li>Home</li>
-              <li>Projects</li>
-              <li>About</li>
+              <li onClick={handleItemClick}>Home</li>
+              <li onClick={handleItemClick}>Projects</li>
+              <li onClick={handleItemClick}>About</li>
             </ul>
           )}
         </div>
-      </nav>
+       
+      </nav> 
+      <hr className='nav__hr'></hr>
     </>
   );
 }

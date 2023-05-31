@@ -1,0 +1,18 @@
+.main {
+    margin: 2rem 1rem 1rem 1rem;
+    &__name {
+        color:rgb(209, 206, 206);
+        font-weight: 700;
+    }
+
+    &__me {
+        color: rgb(168, 166, 166);
+        font-size: .7rem;
+        margin: 1rem 2rem 2rem 2rem;
+
+        &--bold {
+            font-weight: 700;
+            color:rgb(209, 206, 206);
+        }
+    }
+}
