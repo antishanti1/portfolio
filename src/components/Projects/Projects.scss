@@ -1,0 +1,109 @@
+.projects {
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    &__bott {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem;
+    }
+
+    &__main {
+        &-img {
+            &--img {
+                height: 260px;
+                width: 100%;
+            }
+        }
+
+        &-exp {
+            color: rgb(168, 166, 166);
+            margin: 1rem;
+            display: flex;
+           flex-direction: column;
+           gap: 0.4rem;
+           padding-bottom: 1rem;
+        }
+
+        &-desc {
+            font-size: .7rem;
+            color: rgb(168, 166, 166);
+        }
+
+        &-tech {
+            font-size: .8rem;
+            color: rgb(209, 206, 206);
+        }
+
+        &-name {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        &-link {
+           
+        text-decoration: none;
+         padding-top: .5rem;
+            font-weight: 700;
+            background: -webkit-linear-gradient(rgb(253, 255, 255), #b99ad5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            
+            &:link,
+            &:visited {
+              color: inherit; 
+            }
+      
+            &:hover,
+            &:active {
+              color: inherit; 
+              text-decoration: none; 
+            }
+           
+        }
+    }
+}
+
+
+
+.hr {
+    &__box {
+        &-top {
+            border-bottom: 1.2px solid;
+            border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+            border-image-slice: 1;
+            box-shadow: 0 0 8px 2px #78dae5;
+            transform: rotate(-3deg);
+        }
+
+        &-bottom {
+            border-bottom: 1.2px solid;
+            border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+            border-image-slice: 1;
+            box-shadow: 0 0 8px 2px #78dae5;
+            transform: rotate(3deg);
+        }
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(white, #78dae5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+}
+
+.closing {
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(rgb(153, 154, 154), #2b4e52);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+}
+

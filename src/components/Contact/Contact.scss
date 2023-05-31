@@ -1,0 +1,52 @@
+.contact { 
+    
+    &__top {
+            display: flex;
+            margin: 1rem;
+        }
+
+    &__bott {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem 1rem 0 0 ;
+        
+    }
+    &__heading {
+        font-size: 1.5rem;
+        color: white;
+        
+    }
+    
+    &__desc {
+        font-size: .7rem;
+        color: rgb(168, 166, 166);
+        margin: 1rem;
+        line-height: 1.2rem;
+    }
+
+
+    &__details {
+    display: flex;
+    flex-direction: column;
+        &-link {
+            font-size: 1rem;
+            color: white;
+            line-height: 1.5rem;
+        }
+    }
+
+
+
+    &__hr {
+        border-bottom: 1.2px solid;
+        border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+        border-image-slice: 1;
+        box-shadow: 0 0 8px 2px #78dae5;
+        transform: rotate(3deg);
+        
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+}

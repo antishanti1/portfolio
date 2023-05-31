@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Nav.scss';
 import { CgMenuRightAlt } from 'react-icons/cg';
+import {HashLink} from 'react-router-hash-link';
 
 export default function Nav() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -28,9 +29,17 @@ export default function Nav() {
 
           {showDropdown && (
             <ul className='nav__menu-items'>
-              <li onClick={handleItemClick}>Home</li>
-              <li onClick={handleItemClick}>Projects</li>
-              <li onClick={handleItemClick}>About</li>
+            
+            <li onClick={handleItemClick}>
+                              <HashLink smooth to="/#projects" onClick={handleItemClick}>Projects</HashLink>
+              </li>
+            <li onClick={handleItemClick}>
+                              <HashLink smooth to="/#skills" onClick={handleItemClick}>Skills</HashLink>
+              </li>
+            <li onClick={handleItemClick}>
+                              <HashLink smooth to="/#contact" onClick={handleItemClick}>Contact</HashLink>
+              </li>
+
             </ul>
           )}
         </div>

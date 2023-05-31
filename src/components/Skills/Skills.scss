@@ -1,0 +1,51 @@
+.skills {
+    &__icon {
+      color:  white;
+      padding: 0 .7rem 0 .7rem;
+    }
+
+    &__main {
+        height: 200px;
+
+        &-hr {
+            border-bottom: 1.2px solid;
+            border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+            border-image-slice: 1;
+            box-shadow: 0 0 8px 2px #78dae5;
+            transform: rotate(-3deg);
+        }
+
+        &-top {
+            display: flex;
+            margin: 1rem;
+        }
+
+        &-bott {
+            display: flex;
+            justify-content: flex-end;
+            margin: 1rem;
+        }
+
+        &-sec {
+            height: 100px;
+            display: flex;
+        }
+
+        &-list {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: -webkit-linear-gradient(rgb(233, 236, 236), #c197e4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 .5rem 0 .5rem;
+        }
+
+        &-closing {
+            font-size: 1.5rem;
+            background: -webkit-linear-gradient(rgb(153, 154, 154), #2b4e52);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+}
+}

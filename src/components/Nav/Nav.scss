@@ -1,17 +1,21 @@
 .nav {
-    margin: 1rem;
+    padding: 1rem;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border-bottom: 2px solid rgb(106, 238, 227);
+    background-color: rgb(21, 20, 20);
+    
+
+
+
+    
     
    &__hr {
     border-bottom: 1.2px solid;
-    // border-image: linear-gradient(to right, white, rgb(106, 238, 227));
     border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
     border-image-slice: 1;
-    box-shadow: 0 0 8px 2px #78dae5
+    box-shadow: 0 0 8px 2px   #78dae5
 
    }
 
@@ -36,10 +40,21 @@
         }
 
         &-items {
-            color: rgb(209, 206, 206);
-            width: 20%;
             list-style: none;
+            a {
+                color: rgb(209, 206, 206);
+                text-decoration: none;
+        
+                &:hover {
+                  color: rgb(57, 214, 188);
+                }
+        
+                &:active {
+                  color: rgb(57, 214, 188);
+                }
 
         }
     }
+}
+
 }
