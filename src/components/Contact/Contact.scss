@@ -1,9 +1,36 @@
+@use '../../styles/partials/mixins' as *;
+
 .contact { 
     
     &__top {
             display: flex;
             margin: 1rem;
+
+            @include tablet {
+                margin: 2rem 0 0 2rem;
+            }
+
+            @include desktop {
+                margin: 3rem 0 2rem 4rem;
+            }
         }
+
+    &__desktop {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        @include desktop {
+            gap: 5rem;
+           margin-right: 2rem;
+           justify-content: normal;
+        }
+    }
+
 
     &__bott {
         display: flex;
@@ -14,6 +41,10 @@
     &__heading {
         font-size: 1.5rem;
         color: white;
+
+        @include desktop {
+            font-size: 2.5rem;
+        }
         
     }
     
@@ -22,16 +53,43 @@
         color: rgb(168, 166, 166);
         margin: 1rem;
         line-height: 1.2rem;
+
+        @include tablet {
+            font-size: .9rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
 
+
+    &__sec {
+        @include tablet {
+            width: 50%;
+            margin-right: 2rem;
+        }
+    }
 
     &__details {
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        align-items: flex-start;
+        margin-left: 4rem;
+    }
+
+   
         &-link {
             font-size: 1rem;
             color: white;
             line-height: 1.5rem;
+            @include desktop {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
         }
     }
 

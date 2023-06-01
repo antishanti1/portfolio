@@ -1,8 +1,20 @@
+@use '../../styles/partials/mixins' as *;
 .footer {
     &__p {
         font-size: .7rem;
         color: rgb(168, 166, 166);
         margin: 2.5rem 2rem 2rem 2rem ;
+
+        @include tablet {
+            font-size: .9rem;
+            margin: 3.5rem 5rem 2rem 5rem;
+            
+        }
+
+        @include desktop {
+            font-size: 1.2rem;
+            margin: 5rem 10rem 3rem 10rem;
+        }
     }
     
     &__link {
@@ -10,6 +22,10 @@
         color: white;
         line-height: 1.5rem;
         padding-bottom: 2rem;
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
     }
 
 }

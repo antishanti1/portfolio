@@ -16,6 +16,8 @@ export default function Contact() {
      <div className='contact__top'>
 <h2> &lt; Contact  &gt;</h2>
      </div>
+<div className='contact__desktop'>
+
 
      <div className='contact__sec'>
         <span className='contact__heading'>Let's connect</span>
@@ -32,7 +34,7 @@ export default function Contact() {
             <a href='https://github.com/antishanti1' target='_blank' className='contact__details-link underline'>Github<FiArrowUpRight /></a>
             <span className='contact__details-link underline' onClick={handleDownloadResume}>
   Resume <FiArrowUpRight />
-</span>
+</span></div>
             </div>
             <div className='contact__bott'> 
     <h2 className='closing'> &lt; / Contact  &gt;</h2>

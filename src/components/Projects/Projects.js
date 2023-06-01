@@ -38,7 +38,7 @@ map-based interface for easy location-based donations .</p>
                         <span className='projects__main-tech'>REACT, AI</span>
                         <span className='projects__main-name'>TeamWise by UKG</span>
                         <p className='projects__main-desc'>Workplace Psychological Safety Toolkit “TeamWise by UKG” using Generative AI Technology that can automate tasks, generate creative content, and make better decisions by analyzing data and identifying patterns by collaborating with UX designers and group of other students.</p>
-                        <span className='projects__main-link'>VIEW PROJECT <FiArrowUpRight /></span></div>
+                        <a href='https://github.com/antishanti1/ukg.git' target='_blank' rel="noreferrer" className='projects__main-link'>VIEW PROJECT <FiArrowUpRight /></a> </div>
                     </div>
                     </div>
                 <div className='projects__main'>

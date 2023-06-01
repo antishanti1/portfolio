@@ -1,3 +1,5 @@
+@use '../../styles/partials/mixins' as *;
+
 .nav {
     padding: 1rem;
     height: 50px;
@@ -6,10 +8,9 @@
     align-items: center;
     background-color: rgb(21, 20, 20);
     
-
-
-
-    
+    @include desktop {
+        height: 60px;
+    }
     
    &__hr {
     border-bottom: 1.2px solid;
@@ -21,14 +22,36 @@
 
     &__logo {
         color: rgb(209, 206, 206);
+        @include tablet {
+            margin-left: 2rem;
+        }
+
+        @include desktop {
+            margin-left: 4rem;
+            font-size: 1.5rem;
+        }
     }
 
     &__menu {
+
+        @include tablet {
+            margin-right: 2rem;
+        }
+
+        @include desktop {
+            margin-right: 4rem;
+            font-size: 1.2rem;
+        }
         &-icon {
             height: 20px;
             width: 20px;
             color: rgb(209, 206, 206);
             
+            @include  desktop {
+                height: 30px;
+                width: 30px;
+            }
+
 
             &-icon:hover {
                 color:rgb(57, 214, 188);

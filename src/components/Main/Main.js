@@ -17,7 +17,7 @@ export default function Main() {
             </p>  </div>
             <div className='main__bottom'>
                 </div>
-                <div className='intro__mod'>
+                <div className='main__mod'>
                         <Canvas>
                             <Suspense fallback={null}>
                                 <ambientLight intensity={.3} />
