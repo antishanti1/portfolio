@@ -4,7 +4,7 @@ import { saveAs } from "file-saver";
 
 export default function Contact() {
   const handleDownloadResume = () => {
-    const resumePath = "../../assets/Alina_Shutkova.pdf";
+    const resumePath = "../../assets/Alina_Shutkova-resume.pdf";
 
     saveAs(resumePath, "alina_shutkova.pdf");
   };
@@ -35,6 +35,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/alinashutkova/"
             target="_blank"
             className="contact__details-link underline"
+            rel="noreferrer"
           >
             {" "}
             LinkedIn <FiArrowUpRight />
@@ -43,6 +44,7 @@ export default function Contact() {
             href="https://github.com/antishanti1"
             target="_blank"
             className="contact__details-link underline"
+            rel="noreferrer"
           >
             Github
             <FiArrowUpRight />

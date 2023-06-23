@@ -4,6 +4,8 @@ import aidMapper from "../../assets/images/dopomoha.png";
 import ukg from "../../assets/images/ukg.png";
 import instock from "../../assets/images/instock.png";
 import voxai from "../../assets/images/voxai.png";
+import { useRef } from "react";
+import Vox from "../Vox/Vox";
 
 export default function Projects() {
   return (
@@ -19,12 +21,14 @@ export default function Projects() {
         <div className="projects__main">
           <div className="projects__main-box">
             <div className="projects__main-img">
+              {/* <Vox /> */}
               <img
                 src={voxai}
                 alt="voxai"
                 className="projects__main-img--img longer"
-              ></img>
+              />
             </div>
+
             <div className="projects__main-exp">
               <span className="projects__main-tech">
                 REACT NATIVE, EXPO, OPENAI

@@ -4,7 +4,7 @@
   background-color: rgb(21, 20, 20);
 }
 
-.App {
+.app {
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
@@ -13,4 +13,16 @@
   text-decoration: none;
   color: white;
 }
+
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: red;
+    transform-origin: 0%;
+  }
+
 
