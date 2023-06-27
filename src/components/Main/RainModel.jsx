@@ -4,8 +4,10 @@ import { useFrame } from '@react-three/fiber'
 
 export default function RainModel(props) {
     const ref = useRef();
-  const { nodes, materials } = useGLTF("/organic_spike_ball.glb");
-useFrame((state, delta) => (ref.current.rotation.y += 0.05 * delta));
+    const { nodes, materials } = useGLTF("/organic_spike_ball.glb");
+
+
+    useFrame((state, delta) => (ref.current.rotation.y += 0.05 * delta));
   return (
     <group ref={ref} {...props} dispose={null}>
       <group position={[0, -3.5, 0]}

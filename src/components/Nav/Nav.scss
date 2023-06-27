@@ -1,38 +1,89 @@
 @use '../../styles/partials/mixins' as *;
 
+
+
+.container {
+    margin: 1rem;
+    justify-content: space-between;
+
+    @include tablet {
+        margin: 2rem;
+    }
+
+    @include desktop {
+        margin: 4rem;
+    }
+}
+
 .nav {
     padding: 1rem;
-    height: 50px;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(21, 20, 20);
+    border-radius: 24px;
+background: linear-gradient(145deg, #101010, #131313);
+box-shadow:  16px 16px 30px #0b0b0b,
+             -16px -16px 30px #191919;
+
     
     @include desktop {
-        height: 60px;
+        height: 80px;
     }
     
-   &__hr {
-    border-bottom: 1.2px solid;
-    border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
-    border-image-slice: 1;
-    box-shadow: 0 0 8px 2px   #78dae5
+//    &__hr {
+//     border-bottom: 1.2px solid;
+//     border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+//     border-image-slice: 1;
+//     box-shadow: 0 0 8px 2px   #78dae5
 
-   }
+//    }
 
     &__logo {
-        color: rgb(209, 206, 206);
+       background: transparent;
+
+        &-img {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            margin-left: -1.5rem;
+
+            @include tablet {
+                height: 150px;
+                width: 150px;
+                margin-left: -2rem;
+            }
+
+            @include desktop {
+                height: 200px;
+                width: 200px;
+                margin-left: -4rem;
+            }
+        }
         @include tablet {
             margin-left: 2rem;
         }
 
         @include desktop {
             margin-left: 4rem;
-            font-size: 1.5rem;
+       
         }
     }
 
     &__menu {
+
+        &--mobile {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+            @include tablet {
+                display: flex;
+            }
+        }
 
         @include tablet {
             margin-right: 2rem;
@@ -64,20 +115,54 @@
 
         &-items {
             list-style: none;
+
+            @include tablet {
+                display: flex;
+                gap: 2rem;
+                padding-right: 2rem;
+            }
+
+            @include desktop {
+                display: flex;
+                gap: 4rem;
+                padding-right: 4rem;
+                font-size: 1.5rem;
+                
+            }
             a {
                 color: rgb(209, 206, 206);
                 text-decoration: none;
-        
-                &:hover {
-                  color: rgb(57, 214, 188);
-                }
-        
-                &:active {
-                  color: rgb(57, 214, 188);
-                }
-
+                  
         }
     }
+    }
 }
+
+.link {
+    position: relative;
+    
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.7rem;
+    left: 0;
+    background-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hash {
+    color: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
 
 }
