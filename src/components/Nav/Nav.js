@@ -23,50 +23,33 @@ export default function Nav() {
             <img src={logo} alt="logo" className="nav__logo-img" />
           </div>
 
-          <div className="nav__menu--mobile">
-            {!showDropdown && (
-              <CgMenuRightAlt
-                className="nav__menu-icon"
-                onClick={toggleDropdown}
-              />
-            )}
-
-            {showDropdown && (
-              <ul className="nav__menu-items">
-                <li onClick={handleItemClick}>
-                  <HashLink smooth to="/#projects" onClick={handleItemClick}>
-                    Projects
-                  </HashLink>
-                </li>
-                <li onClick={handleItemClick}>
-                  <HashLink smooth to="/#skills" onClick={handleItemClick}>
-                    Skills
-                  </HashLink>
-                </li>
-                <li onClick={handleItemClick}>
-                  <HashLink smooth to="/#contact" onClick={handleItemClick}>
-                    Contact
-                  </HashLink>
-                </li>
-              </ul>
-            )}
-          </div>
-
-          <div className="nav__menu--desktop">
-            <ul className="nav__menu-items">
-              <li className="link" onClick={handleItemClick}>
+          <div
+            className="nav__menu"
+            style={{
+              width: "100%",
+            }}
+          >
+            <ul
+              className="nav__menu-items"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                flexDirection: "row",
+              }}
+            >
+              <li onClick={handleItemClick}>
                 <HashLink smooth to="/#projects" onClick={handleItemClick}>
-                  projects
+                  Projects
                 </HashLink>
               </li>
-              <li className="link" onClick={handleItemClick}>
+              <li onClick={handleItemClick}>
                 <HashLink smooth to="/#skills" onClick={handleItemClick}>
-                  skills
+                  Skills
                 </HashLink>
               </li>
-              <li className="link" onClick={handleItemClick}>
+              <li onClick={handleItemClick}>
                 <HashLink smooth to="/#contact" onClick={handleItemClick}>
-                  contact
+                  Contact
                 </HashLink>
               </li>
             </ul>

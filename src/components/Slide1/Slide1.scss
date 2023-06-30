@@ -1,0 +1,44 @@
+@use '../../styles/partials/mixins' as *;
+.slide1 {
+    margin:4rem 2rem 4rem 2rem ;
+
+    @include tablet {
+        margin: 4rem;
+    }
+
+    @include mid {
+        margin: 5rem;
+    }
+
+    @include desktop {
+        margin: 6rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @include desktop {
+            justify-content: space-evenly;
+        }
+        &-img {
+            height: 50px;
+            width: 50px;
+
+            @include tablet {
+                height: 80px;
+                width: 80px;
+            }
+
+            @include mid {
+                height: 100px;
+                width: 100px;
+            }
+
+            @include desktop {
+                height: 120px;
+                width: 120px;
+               
+            }
+        }
+    }
+}

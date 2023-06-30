@@ -9,10 +9,6 @@
     @include tablet {
         margin: 2rem;
     }
-
-    @include desktop {
-        margin: 4rem;
-    }
 }
 
 .nav {
@@ -22,22 +18,12 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 24px;
-background: linear-gradient(145deg, #101010, #131313);
-box-shadow:  16px 16px 30px #0b0b0b,
-             -16px -16px 30px #191919;
 
     
     @include desktop {
         height: 80px;
     }
     
-//    &__hr {
-//     border-bottom: 1.2px solid;
-//     border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
-//     border-image-slice: 1;
-//     box-shadow: 0 0 8px 2px   #78dae5
-
-//    }
 
     &__logo {
        background: transparent;
@@ -47,6 +33,7 @@ box-shadow:  16px 16px 30px #0b0b0b,
             width: 100px;
             background: transparent;
             margin-left: -1.5rem;
+            margin-top: 0.5rem;
 
             @include tablet {
                 height: 150px;
@@ -130,13 +117,17 @@ box-shadow:  16px 16px 30px #0b0b0b,
                 
             }
             a {
-                color: rgb(209, 206, 206);
+                color:  #0D1317;
                 text-decoration: none;
+
                   
         }
     }
     }
 }
+
+
+
 
 .link {
     position: relative;

@@ -1,81 +1,84 @@
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as *;
 
 
 .skills {
-    &__icon {
-      color:  white;
-      padding: 0 .7rem 0 .7rem;
+    padding: 2rem 0 3rem 0;
+    background-color: #6564DB;
+
+    @include tablet {
+        padding-bottom: 5rem;
     }
 
-    &__main {
-        height: 200px;
+    @include desktop {
+        padding-bottom: 9rem;
+    }
+    &__heading {
+        color: white;
+        font-size: 1.7rem;
+        font-family: "Bowlby";
+        text-align: left;
+        padding-left: 1rem;
 
-
-
-
-        &-hr {
-            border-bottom: 1.2px solid;
-            border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
-            border-image-slice: 1;
-            box-shadow: 0 0 8px 2px #78dae5;
-            transform: rotate(-3deg);
-        }
-
-        &-top {
-            display: flex;
-            margin: 1rem;
-
-            @include tablet {
-                margin-left: 2rem;
-            }
-
-            @include desktop {
-                margin-left: 4rem;
-            }
-        }
-
-        &-bott {
-            display: flex;
-            justify-content: flex-end;
-            margin: 1rem;
-        }
-
-        &-sec {
-            height: 100px;
-            display: flex;
-            @include desktop {
-                height: 150px;
-            }
-        }
-
-        &-list {
+        @include tablet {
             font-size: 2.5rem;
-            font-weight: 700;
-            background: -webkit-linear-gradient(rgb(233, 236, 236), #c197e4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            padding: 0 .5rem 0 .5rem;
-
-            @include desktop {
-                font-size: 4.5rem;
-            }
+            padding-top: 1rem;
+            padding-left: 2rem
         }
 
-        &-closing {
-            font-size: 1.5rem;
-            background: -webkit-linear-gradient(rgb(153, 154, 154), #2b4e52);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-
-            @include tablet {
-                margin: 0 2rem 2rem 0;
-            }
-
-            @include desktop {
-                font-size: 2.2rem;
-                margin: 4rem 4rem 4rem 0;
-            }
+        @include desktop {
+            font-size: 3.5rem;
+            padding: 4rem 3.5rem 1rem 3.5rem;
         }
-}
+    }
+
+
+    &__box {
+        padding-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        @include desktop {
+            gap: 2rem;
+            padding: 0 12rem;
+        }
+        &-skill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 2rem;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #5b5ac5, #6c6bea);
+            box-shadow:  11px 11px 22px #504fad,
+             -11px -11px 22px #7a79ff;
+
+             @include desktop {
+                height: 135px;
+                width: 135px;
+             }
+
+             &-img {
+                height: 65px;
+                width: 65px;
+
+                @include desktop {
+                    height: 85px;
+                    width: 85px;
+                }
+             }
+
+             &-desc {
+                position: absolute;
+                bottom: -35%;
+                color: #383777;
+                font-family: "Bowlby";
+                font-weight: 500;
+             }
+        }
+    }
 }

@@ -1,110 +1,119 @@
 @use '../../styles/partials/mixins' as *;
 
 .contact { 
-    
-    &__top {
-            display: flex;
-            margin: 1rem;
-
-            @include tablet {
-                margin: 2rem 0 0 2rem;
-            }
-
-            @include desktop {
-                margin: 3rem 0 2rem 4rem;
-            }
-        }
-
-    &__desktop {
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        @include desktop {
-            gap: 5rem;
-           margin-right: 2rem;
-           justify-content: normal;
-        }
-    }
-
-
-    &__bott {
-        display: flex;
-        justify-content: flex-end;
-        margin: 2rem 1rem 0 0 ;
-        
-    }
+    padding: 2rem 1rem;
     &__heading {
-        font-size: 1.5rem;
-        color: white;
+        color: #151414;
+        font-size: 1.7rem;
+        font-family: "Bowlby";
+        text-align: left;
+        padding-left: 1rem;
 
-        @include desktop {
+        @include tablet {
             font-size: 2.5rem;
         }
-        
+
+        @include desktop {
+            font-size: 3.5rem;
+            padding: 4rem 3.5rem;
+        }
     }
-    
-    &__desc {
-        font-size: .7rem;
-        color: rgb(168, 166, 166);
-        margin: 1rem;
-        line-height: 1.2rem;
+
+    &__p {
+        padding: 2rem 1rem;
+        text-align: left;
 
         @include tablet {
-            font-size: .9rem;
+            font-size: 1.3rem;
+            width: 50%;
         }
 
         @include desktop {
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-    }
-
-
-    &__sec {
-        @include tablet {
+            font-size: 1.9rem;
             width: 50%;
-            margin-right: 2rem;
         }
     }
 
-    &__details {
-    display: flex;
-    flex-direction: column;
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 2rem;
+        flex-direction: column;
 
-    @include tablet {
-        align-items: flex-start;
-        margin-left: 4rem;
-    }
+        @include tablet {
+            flex-direction: row;
+        }
 
-   
-        &-link {
-            font-size: 1rem;
-            color: white;
-            line-height: 1.5rem;
-            @include desktop {
-                font-size: 1.5rem;
-                line-height: 2.5rem;
+        @include desktop {
+            gap: 2rem;
+            padding-top: 0;
+        }
+
+        &-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 1rem;
+
+            @include tablet {
+                gap: .3rem;
+            
+             
             }
         }
-    }
 
+        &-right {
+            @include tablet {
+                gap: .3rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
-
-    &__hr {
-        border-bottom: 1.2px solid;
-        border-image: linear-gradient(to right, white, rgb(106, 204, 227), rgb(6, 147, 169));
-        border-image-slice: 1;
-        box-shadow: 0 0 8px 2px #78dae5;
-        transform: rotate(3deg);
+        &-links {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          @include tablet {
+            font-size: 1.2rem;
+          }
+          @include desktop {
+            font-size: 1.9rem;
+          }
+        }
         
+        @include tablet {
+            align-items: center;
+        }
     }
 
-    .underline {
-        text-decoration: underline;
+    &__img {
+        height: 40px;
+        width: 40px;
+
+        @include desktop {
+            height: 80px;
+            width: 80px;
+        }
     }
+
+    &__icon {
+        height: 25px;
+
+        @include desktop {
+            height: 50px;
+        }
+    }
+    
+}
+
+.lk {
+    color: #151414;
+    text-decoration: none;
+    
+  
 }
