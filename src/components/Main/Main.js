@@ -1,8 +1,6 @@
 import "./Main.scss";
-import { React, useEffect } from "react";
+import { React } from "react";
 import bg from "../../assets/images/background1.png";
-import { useInView } from "react-intersection-observer";
-import MainTop from "../MainTop/MainTop";
 
 export default function Main() {
   return (

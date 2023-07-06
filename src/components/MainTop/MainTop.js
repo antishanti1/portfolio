@@ -1,9 +1,8 @@
 import "./MainTop.scss";
-import { React, Suspense, useEffect } from "react";
+import { React, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Model from "./Model";
-import { useInView } from "react-intersection-observer";
 
 export default function MainTop() {
   return (

@@ -1,6 +1,5 @@
 import "./Contact.scss";
 import { saveAs } from "file-saver";
-import { Link } from "react-router-dom";
 import arrow from "../../assets/images/arrow.png";
 import twitter from "../../assets/images/twitter.png";
 import linkedin from "../../assets/images/linkedin.png";

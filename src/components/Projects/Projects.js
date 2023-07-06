@@ -9,7 +9,6 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./Projects.scss";
-import { useState } from "react";
 import arrow from "../../assets/images/purple.png";
 import aidMapper from "../../assets/images/dopomoha.png";
 import ukg from "../../assets/images/ukg.png";
@@ -19,9 +18,6 @@ import left from "../../assets/images/left.png";
 import right from "../../assets/images/right.png";
 
 export default function Projects() {
-  const [slideCount, setSlideCount] = useState(2);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   return (
     <section className="projects">
       <h1 className="projects__heading">Projects</h1>
@@ -163,10 +159,9 @@ export default function Projects() {
                 <span className="projects__box-name">VoxAI</span>
                 <span className="projects__box-desc">
                   Mobile app that combines the power of natural language
-                  processing seamless real-time image and text generation within
-                  the platform, enhancing the overall user experience.Custom AI
-                  chatbot powered by OpenAI API.Chat with the AI and generate
-                  images at the same time
+                  processing and seamless real-time image generation within the
+                  platform enhancing the overall user experience.Custom AI
+                  chatbot powered by OpenAI API.
                 </span>
                 <Link
                   to="https://expo.dev/@antishanti/voxai?serviceType=classic&distribution=expo-go"
